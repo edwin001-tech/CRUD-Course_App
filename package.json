@@ -13,6 +13,7 @@
     "express": "^4.17.1",
     "express-handlebars": "^4.0.3",
     "express-router": "0.0.1",
+    "hbs": "^4.1.1",
     "mongoose": "^5.9.9"
   }
 }
