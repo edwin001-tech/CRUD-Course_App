@@ -1,0 +1,18 @@
+{
+  "name": "course_app",
+  "version": "1.0.0",
+  "description": "crud course app with mongoDB and Nodejs",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "edwin shitakwa",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.3",
+    "express-router": "0.0.1",
+    "mongoose": "^5.9.9"
+  }
+}
