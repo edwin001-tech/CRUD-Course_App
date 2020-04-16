@@ -5,6 +5,18 @@ const express = require('express');
 var app = express();
 const path = require('path');
 const exphb = require('express-handlebars');
+const Handlebars = require('handlebars')
+const expressHandlebars = require('express-handlebars');
+const {allowInsecurePrototypeAccess} = require('@handlebars/allow-prototype-access')
+
+
+
+app.engine('handlebars', expressHandlebars({
+    handlebars: allowInsecurePrototypeAccess(Handlebars)
+}));
+app.set('view engine', 'handlebars');
+
+
 const bodyparser = require('body-parser');
 
 const courseController = require('./controllers/courseController');
